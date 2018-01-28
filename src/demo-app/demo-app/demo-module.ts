@@ -12,6 +12,8 @@ import {NgModule} from '@angular/core';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {RouterModule} from '@angular/router';
 import {AutocompleteDemo} from '../autocomplete/autocomplete-demo';
+import {BottomNavDemo} from '../bottom-nav/bottom-nav-demo';
+import {BottomNavDemoModule} from '../bottom-nav/bottom-nav-demo-module';
 import {BaselineDemo} from '../baseline/baseline-demo';
 import {ButtonToggleDemo} from '../button-toggle/button-toggle-demo';
 import {ButtonDemo} from '../button/button-demo';
@@ -68,10 +70,12 @@ import {TableDemoModule} from '../table/table-demo-module';
     DemoMaterialModule,
     LayoutModule,
     TableDemoModule,
+    BottomNavDemoModule,
   ],
   declarations: [
     AutocompleteDemo,
     BaselineDemo,
+    BottomNavDemo,
     ButtonDemo,
     ButtonToggleDemo,
     CardDemo,

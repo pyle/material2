@@ -1,0 +1,17 @@
+<h1> Bottom Navigation Bar</h1>
+
+<div class="demo-bottom-nav-container">
+  <router-outlet></router-outlet>
+  <nav mat-bottom-nav color="primary" id="bottom-navigation">
+    <a mat-bottom-nav-item
+      *ngFor="let item of navItems; let i = index;"
+      routerLinkActive #rla="routerLinkActive"
+      [active]="rla.isActive"
+      [routerLink]="item.link">
+      <mat-icon>
+        {{ item.icon }}
+      </mat-icon>
+      {{ item.label }}
+    </a>
+  </nav>
+</div>

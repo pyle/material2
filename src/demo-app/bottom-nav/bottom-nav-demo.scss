@@ -1,0 +1,12 @@
+.demo-bottom-nav-container {
+  width: 320px;
+  height: 560px;
+  position: relative;
+  border: 1px solid black;
+}
+
+#bottom-navigation {
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+}

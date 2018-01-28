@@ -11,6 +11,8 @@ import {AccessibilityDemo} from '../a11y/a11y';
 import {ACCESSIBILITY_DEMO_ROUTES} from '../a11y/routes';
 import {AutocompleteDemo} from '../autocomplete/autocomplete-demo';
 import {BaselineDemo} from '../baseline/baseline-demo';
+import {BottomNavDemo} from '../bottom-nav/bottom-nav-demo';
+import {BOTTOM_NAV_DEMO_ROUTES} from '../bottom-nav/routes';
 import {ButtonToggleDemo} from '../button-toggle/button-toggle-demo';
 import {ButtonDemo} from '../button/button-demo';
 import {CardDemo} from '../card/card-demo';
@@ -55,6 +57,7 @@ export const DEMO_APP_ROUTES: Routes = [
   {path: '', component: DemoApp, children: [
     {path: '', component: Home},
     {path: 'autocomplete', component: AutocompleteDemo},
+    {path: 'bottom-nav', component: BottomNavDemo, children: BOTTOM_NAV_DEMO_ROUTES},
     {path: 'baseline', component: BaselineDemo},
     {path: 'button', component: ButtonDemo},
     {path: 'button-toggle', component: ButtonToggleDemo},
