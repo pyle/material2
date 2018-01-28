@@ -2,17 +2,18 @@
 @import '../core';
 @import '../../autocomplete/autocomplete-theme';
 @import '../../badge/badge-theme';
+@import '../../bottom-nav/bottom-nav-theme';
 @import '../../bottom-sheet/bottom-sheet-theme';
-@import '../../button/button-theme';
 @import '../../button-toggle/button-toggle-theme';
+@import '../../button/button-theme';
 @import '../../card/card-theme';
 @import '../../checkbox/checkbox-theme';
 @import '../../chips/chips-theme';
-@import '../../table/table-theme';
 @import '../../datepicker/datepicker-theme';
 @import '../../dialog/dialog-theme';
 @import '../../divider/divider-theme';
 @import '../../expansion/expansion-theme';
+@import '../../form-field/form-field-theme';
 @import '../../grid-list/grid-list-theme';
 @import '../../icon/icon-theme';
 @import '../../input/input-theme';
@@ -26,14 +27,14 @@
 @import '../../sidenav/sidenav-theme';
 @import '../../slide-toggle/slide-toggle-theme';
 @import '../../slider/slider-theme';
-@import '../../stepper/stepper-theme';
+@import '../../snack-bar/snack-bar-theme';
 @import '../../sort/sort-theme';
+@import '../../stepper/stepper-theme';
+@import '../../table/table-theme';
 @import '../../tabs/tabs-theme';
 @import '../../toolbar/toolbar-theme';
 @import '../../tooltip/tooltip-theme';
 @import '../../tree/tree-theme';
-@import '../../snack-bar/snack-bar-theme';
-@import '../../form-field/form-field-theme';
 
 
 // Create a theme.
@@ -41,13 +42,13 @@
   @include mat-core-theme($theme);
   @include mat-autocomplete-theme($theme);
   @include mat-badge-theme($theme);
+  @include mat-bottom-nav-theme($theme);
   @include mat-bottom-sheet-theme($theme);
   @include mat-button-theme($theme);
   @include mat-button-toggle-theme($theme);
   @include mat-card-theme($theme);
   @include mat-checkbox-theme($theme);
   @include mat-chips-theme($theme);
-  @include mat-table-theme($theme);
   @include mat-datepicker-theme($theme);
   @include mat-dialog-theme($theme);
   @include mat-divider-theme($theme);
@@ -66,11 +67,12 @@
   @include mat-sidenav-theme($theme);
   @include mat-slide-toggle-theme($theme);
   @include mat-slider-theme($theme);
-  @include mat-stepper-theme($theme);
+  @include mat-snack-bar-theme($theme);
   @include mat-sort-theme($theme);
+  @include mat-stepper-theme($theme);
+  @include mat-table-theme($theme);
   @include mat-tabs-theme($theme);
   @include mat-toolbar-theme($theme);
   @include mat-tooltip-theme($theme);
   @include mat-tree-theme($theme);
-  @include mat-snack-bar-theme($theme);
 }
