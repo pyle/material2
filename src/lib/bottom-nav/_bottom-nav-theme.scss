@@ -1,0 +1,49 @@
+@import '../core/theming/palette';
+@import '../core/theming/theming';
+@import '../core/typography/typography-utils';
+
+@mixin _mat-bottom-nav-color($palette) {
+  background: mat-color($palette);
+  color: mat-color($palette, default-contrast);
+}
+
+@mixin mat-bottom-nav-theme($theme) {
+  $primary: map-get($theme, primary);
+  $accent: map-get($theme, accent);
+  $warn: map-get($theme, warn);
+  $background: map-get($theme, background);
+  $foreground: map-get($theme, foreground);
+
+  .mat-bottom-nav {
+    background: mat-color($background, app-bar);
+    color: mat-color($foreground, text);
+
+    &.mat-primary {
+      @include _mat-bottom-nav-color($primary);
+    }
+
+    &.mat-accent {
+      @include _mat-bottom-nav-color($accent);
+    }
+
+    &.mat-warn {
+      @include _mat-bottom-nav-color($warn);
+    }
+  }
+
+  .mat-bottom-nav-item {
+    color: mat-color($foreground, text);
+
+    &.mat-primary {
+      @include _mat-bottom-nav-color($primary);
+    }
+
+    &.mat-accent {
+      @include _mat-bottom-nav-color($accent);
+    }
+
+    &.mat-warn {
+      @include _mat-bottom-nav-color($warn);
+    }
+  }
+}
