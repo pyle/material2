@@ -68,6 +68,8 @@ System.config({
     '@angular/cdk-experimental/dialog': 'dist/packages/cdk-experimental/dialog/index.js',
 
     '@angular/material/autocomplete': 'dist/packages/material/autocomplete/index.js',
+    '@angular/material/badge': 'dist/packages/material/badge/index.js',
+    '@angular/material/bottom-nav': 'dist/packages/material/bottom-nav/index.js',
     '@angular/material/bottom-sheet': 'dist/packages/material/bottom-sheet/index.js',
     '@angular/material/button': 'dist/packages/material/button/index.js',
     '@angular/material/button-toggle': 'dist/packages/material/button-toggle/index.js',
@@ -100,7 +102,6 @@ System.config({
     '@angular/material/tabs': 'dist/packages/material/tabs/index.js',
     '@angular/material/toolbar': 'dist/packages/material/toolbar/index.js',
     '@angular/material/tooltip': 'dist/packages/material/tooltip/index.js',
-    '@angular/material/badge': 'dist/packages/material/badge/index.js',
     '@angular/material/tree': 'dist/packages/material/tree/index.js',
   },
   packages: {
