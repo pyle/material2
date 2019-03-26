@@ -23,7 +23,6 @@ import {DevAppDirectionality} from './dev-app-directionality';
 export class DevAppLayout {
   dark = false;
   navItems = [
-    {name: 'Examples', route: '/examples'},
     {name: 'Autocomplete', route: '/autocomplete'},
     {name: 'Badge', route: '/badge'},
     {name: 'Bottom Nav', route: '/bottom-nav'},
@@ -39,6 +38,7 @@ export class DevAppLayout {
     {name: 'Dialog', route: '/dialog'},
     {name: 'Drag and Drop', route: '/drag-drop'},
     {name: 'Drawer', route: '/drawer'},
+    {name: 'Examples', route: '/examples'},
     {name: 'Expansion Panel', route: '/expansion'},
     {name: 'Focus Origin', route: '/focus-origin'},
     {name: 'Gestures', route: '/gestures'},
